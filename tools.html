@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tools</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bg-slider"></div>
+
+<header>
+<div class="top-image">
+<img src="09.png">
+</div>
+<h1>🌾 Farming Website</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="products.html">Products</a>
+<a href="tools.html">Tools</a>
+<a href="Tips.html">Rates</a>
+<a href="video.html">Video</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="tools-section">
+
+<div class="tool-card" onclick="showInfo('હળ','હળ જમીન ખેડવા માટે મહત્વપૂર્ણ સાધન છે.','10.webp')">
+<img src="10.webp"><h3>હળ</h3></div>
+
+<div class="tool-card" onclick="showInfo('ટ્રેક્ટર','ટ્રેક્ટર ખેતી માટે શક્તિશાળી મશીન છે.','11.jpg')">
+<img src="11.jpg"><h3>ટ્રેક્ટર</h3></div>
+
+<div class="tool-card" onclick="showInfo('સીડ ડ્રિલ','બીજ વાવવાનું આધુનિક સાધન છે.','12.jpg')">
+<img src="12.jpg"><h3>સીડ ડ્રિલ</h3></div>
+
+<div class="tool-card" onclick="showInfo('સ્પ્રેયર','પાક પર દવા છાંટવા માટે વપરાય છે.','13.jpg')">
+<img src="13.jpg"><h3>સ્પ્રેયર</h3></div>
+
+<div class="tool-card" onclick="showInfo('હાર્વેસ્ટર','પાક કાપવા માટે મશીન છે.','14.jpg')">
+<img src="14.jpg"><h3>હાર્વેસ્ટર</h3></div>
+
+<div class="tool-card" onclick="showInfo('પાણી પંપ','પાણી ખેતરમાં પહોંચાડે છે.','15.jpg')">
+<img src="15.jpg"><h3>પાણી પંપ</h3></div>
+
+<div class="tool-card" onclick="showInfo('રોટાવેટર','જમીન નરમ અને તૈયાર કરે છે.','16.jpg')">
+<img src="16.jpg"><h3>રોટાવેટર</h3></div>
+
+<div class="tool-card" onclick="showInfo('કલ્ટિવેટર','જમીન ખેડવા માટે ઉપયોગ થાય છે.','17.jpg')">
+<img src="17.jpg"><h3>કલ્ટિવેટર</h3></div>
+
+<div class="tool-card" onclick="showInfo('થ્રેશર','અનાજ ને છોડથી અલગ કરે છે.','18.jpg')">
+<img src="18.jpg"><h3>થ્રેશર</h3></div>
+
+<div class="tool-card" onclick="showInfo('ડ્રિપ સિસ્ટમ','પાણી બચાવીને છોડ સુધી પહોંચાડે છે.','19.jpg')">
+<img src="19.jpg"><h3>ડ્રિપ સિસ્ટમ</h3></div>
+
+<div class="tool-card" onclick="showInfo('પાવર ટીલર','નાનું ટ્રેક્ટર જેવું સાધન છે.','20.jpg')">
+<img src="20.jpg"><h3>પાવર ટીલર</h3></div>
+
+<div class="tool-card" onclick="showInfo('સ્પેડ','જમીન ખોદવા માટે ઉપયોગ થાય છે.','21.jpg')">
+<img src="21.jpg"><h3>સ્પેડ</h3></div>
+
+</div>
+
+<!-- ✅ MODAL POPUP -->
+<div id="popup" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closePopup()">X</span>
+    <img id="toolImage">
+    <h2 id="toolTitle"></h2>
+    <p id="toolInfo"></p>
+  </div>
+</div>
+
+<footer>
+<p>© 2026 Farming Website</p>
+</footer>
+
+<script>
+
+function showInfo(title, info, img){
+document.getElementById("popup").style.display="flex";
+document.getElementById("toolTitle").innerText=title;
+document.getElementById("toolInfo").innerText=info;
+document.getElementById("toolImage").src=img;
+}
+
+function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+
+</script>
+
+</body>
+</html>

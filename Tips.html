@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rates</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bg-slider"></div>
+
+<header>
+<div class="top-image">
+<img src="09.png">
+</div>
+<h1>🌾 Farming Website</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="products.html">Products</a>
+<a href="tools.html">Tools</a>
+<a href="Tips.html">Rates</a>
+<a href="video.html">Video</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<h2 style="text-align:center;color:white;text-shadow:2px 2px 5px black;">
+💰 Live Market Rates (આજના ભાવ)
+</h2>
+
+<table>
+
+<tr>
+<th>પાક</th>
+<th>ભાવ (₹)</th>
+</tr>
+
+<tr><td>🌾 ઘઉં</td><td id="wheat">Loading...</td></tr>
+<tr><td>🌽 મકાઈ</td><td id="maize">Loading...</td></tr>
+<tr><td>🌿 કપાસ</td><td id="cotton">Loading...</td></tr>
+<tr><td>🌾 ચોખા</td><td id="rice">Loading...</td></tr>
+<tr><td>🌱 સોયાબીન</td><td id="soybean">Loading...</td></tr>
+<tr><td>🌿 મૂંગ</td><td id="moong">Loading...</td></tr>
+<tr><td>🌿 તુવેર</td><td id="tuver">Loading...</td></tr>
+
+<tr><td>🥔 બટાટા</td><td id="potato">Loading...</td></tr>
+<tr><td>🍅 ટામેટા</td><td id="tomato">Loading...</td></tr>
+<tr><td>🧅 ડુંગળી</td><td id="onion">Loading...</td></tr>
+<tr><td>🥒 કાકડી</td><td id="cucumber">Loading...</td></tr>
+<tr><td>🍆 રીંગણ</td><td id="brinjal">Loading...</td></tr>
+<tr><td>🌶️ મરચાં</td><td id="chilli">Loading...</td></tr>
+
+</table>
+
+<p style="text-align:center;color:red;font-weight:600;">
+નોંધ: ભાવ બદલાતા રહે છે (Demo Live)
+</p>
+
+<footer>
+<p>© 2026 Farming Website</p>
+</footer>
+
+<script>
+
+function updatePrices(){
+
+document.getElementById("wheat").innerText = 2200 + Math.floor(Math.random()*300);
+document.getElementById("maize").innerText = 1800 + Math.floor(Math.random()*300);
+document.getElementById("cotton").innerText = 6000 + Math.floor(Math.random()*800);
+document.getElementById("rice").innerText = 2000 + Math.floor(Math.random()*400);
+document.getElementById("soybean").innerText = 4000 + Math.floor(Math.random()*600);
+document.getElementById("moong").innerText = 5000 + Math.floor(Math.random()*700);
+document.getElementById("tuver").innerText = 6000 + Math.floor(Math.random()*800);
+
+document.getElementById("potato").innerText = 1200 + Math.floor(Math.random()*400);
+document.getElementById("tomato").innerText = 800 + Math.floor(Math.random()*600);
+document.getElementById("onion").innerText = 900 + Math.floor(Math.random()*600);
+document.getElementById("cucumber").innerText = 700 + Math.floor(Math.random()*300);
+document.getElementById("brinjal").innerText = 600 + Math.floor(Math.random()*400);
+document.getElementById("chilli").innerText = 1500 + Math.floor(Math.random()*800);
+
+}
+
+updatePrices();
+setInterval(updatePrices, 5000);
+
+</script>
+
+</body>
+</html>
